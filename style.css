@@ -282,20 +282,79 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   margin-right: 40px;
 }
 
+/* POLISHED FOOTER DESIGN */
+
+.site-footer {
+  background: var(--brown);
+  color: #fff;
+  padding: 36px 0; /* more breathing room */
+  border-top: none;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.footer-inner > div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.site-footer strong {
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.site-footer address {
+  margin: 4px 0 8px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.site-footer p {
+  margin: 4px 0;
+  line-height: 1.45;
+  opacity: 0.95;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer a:hover {
+  opacity: 0.75;
+}
+
 @media (max-width:780px){
   .form-row{grid-template-columns:1fr}
   .hero-copy h1{font-size:26px}
   .nav{display:none}
-  
+
+  /* footer mobile layout */
+  .site-footer {
+    padding: 28px 0;
+  }
+
   .footer-inner {
-    flex-wrap: wrap;  /* stack on small screens */
+    flex-wrap: wrap;
+    gap: 22px;
   }
 
   .footer-inner > div {
+    min-width: 100%;
     margin-right: 0;
     margin-bottom: 16px;
   }
 }
+
 
 .hero-art {
   flex: 1;
