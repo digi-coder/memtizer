@@ -61,9 +61,44 @@ body{
   background: #faf6ef;
   border: 1px solid #e7d8c2;
   border-radius: 8px;
-  padding: 1.4rem 1.2rem;
+  padding: 1.2rem 1.1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.service-icon {
+  flex: 0 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.service-icon svg {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.services-grid li strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  color: #533e2d;
+}
+
+.services-grid li span {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #6f5d4d;
 }
 
 .services-grid li:hover {
