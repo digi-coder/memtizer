@@ -62,3 +62,17 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   .hero-copy h1{font-size:26px}
   .nav{display:none}
 }
+
+.hero-art {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-art svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
