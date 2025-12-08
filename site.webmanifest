@@ -1,0 +1,23 @@
+{
+  "name": "Memtizer",
+  "short_name": "Memtizer",
+  "description": "Digitize VHS, Hi8, Video8, MiniDV and PAL VHS tapes to MP4. Local drop-off and pickup by appointment in North Hollywood.",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c49a6c"
+}
