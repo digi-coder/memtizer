@@ -16,7 +16,15 @@ body{
   line-height:1.5;font-size:16px;
 }
 .container{max-width:var(--max);margin:0 auto;padding:28px}
-.site-header{background:transparent;padding:10px 0;position:sticky;top:0;z-index:20}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff; /* solid white background */
+  border-bottom: 1px solid #eee;
+}
+
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
 .brand-text{font-weight:700;font-size:20px}
