@@ -265,10 +265,36 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   color: #fff;
 }
 
+/* Restore horizontal layout for footer columns */
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.footer-inner > div {
+  flex: 1;
+}
+
+/* Optional: make spacing nicer */
+.footer-inner > div:first-child {
+  margin-right: 40px;
+}
+
 @media (max-width:780px){
   .form-row{grid-template-columns:1fr}
   .hero-copy h1{font-size:26px}
   .nav{display:none}
+  
+  .footer-inner {
+    flex-wrap: wrap;  /* stack on small screens */
+  }
+
+  .footer-inner > div {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 }
 
 .hero-art {
