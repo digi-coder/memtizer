@@ -20,9 +20,14 @@ body{
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background: #ffffff; /* solid white background */
-  border-bottom: 1px solid #eee;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.96); /* slightly translucent */
+  backdrop-filter: blur(8px); /* frosted glass effect */
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.site-header .nav a {
+  color: #333; /* dark text for contrast */
 }
 
 .header-inner{display:flex;align-items:center;justify-content:space-between}
