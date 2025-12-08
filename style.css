@@ -123,9 +123,37 @@ body{
 .local-seo{margin-top:12px;color:var(--muted);font-size:14px}
 
 .how-it-works{padding:26px 0}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:18px}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.steps {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:18px}
+
+
 .step{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 14px rgba(10,10,10,0.03)}
-.step-icon{width:44px;height:44px;border-radius:8px;background:var(--brown);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:10px}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--brown);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.step-icon-graphic svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
 
 .quote{padding:30px 0;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6))}
 .form{max-width:900px;margin:0 auto}
