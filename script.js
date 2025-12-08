@@ -26,3 +26,35 @@ if(form){
     }, 4000);
   });
 }
+
+// FAQ accordion toggle
+const faqButtons = document.querySelectorAll('.faq-question');
+
+if (faqButtons.length) {
+  faqButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+      // Optional: close all others
+      faqButtons.forEach((b) => {
+        if (b !== btn) {
+          b.setAttribute('aria-expanded', 'false');
+          if (b.nextElementSibling) {
+            b.nextElementSibling.hidden = true;
+          }
+          const otherIcon = b.querySelector('.faq-icon');
+          if (otherIcon) otherIcon.textContent = '+';
+        }
+      });
+
+      // Toggle this one
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (btn.nextElementSibling) {
+        btn.nextElementSibling.hidden = expanded;
+      }
+      const icon = btn.querySelector('.faq-icon');
+      if (icon) icon.textContent = expanded ? '+' : '–';
+    });
+  });
+}
+
