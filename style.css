@@ -372,24 +372,25 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
 
 .footer-divider {
   width: 60%;
-  margin: 1.5rem auto 1rem auto; /* Centered line with spacing */
+  margin: 1.5rem auto 1rem auto;  /* Centered line with spacing */
   border: 0;
-  border-top: 1px solid #ddd;    /* Light, subtle line */
+  border-top: 1px solid rgba(255, 255, 255, 0.35); /* subtle light line in footer style */
 }
 
 .footer-credit {
   text-align: center;
   font-size: 0.75rem;
-  color: #888;
-  margin-top: 1.5rem;
-  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9); /* soft white, consistent with footer text */
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-credit a {
-  color: #888;
-  text-decoration: none;
+  color: inherit;                 /* match the text color */
+  text-decoration: underline;     /* consistent with other footer links */
+  font-weight: 500;
 }
 
 .footer-credit a:hover {
-  text-decoration: underline;
+  opacity: 0.8;                   /* same hover feel as other footer links */
 }
