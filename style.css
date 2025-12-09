@@ -9,13 +9,38 @@
   --pad:18px;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
+
 *{box-sizing:border-box}
+
 html,body{height:100%}
+
 body{
-  margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;
-  line-height:1.5;font-size:16px;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+  font-size:16px;
 }
-.container{max-width:var(--max);margin:0 auto;padding:28px}
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px;
+}
+
+/* Simple utility text styles */
+.sub{
+  color:var(--muted);
+  font-size:0.98rem;
+  margin-top:4px;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+/* HEADER / NAV */
 
 .site-header {
   position: sticky;
@@ -26,22 +51,94 @@ body{
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-.site-header .nav a {
-  color: #333; /* dark text for contrast */
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
-.brand-text{font-weight:700;font-size:20px}
-.nav a{margin-left:18px;text-decoration:none;color:var(--muted)}
-.nav a.cta{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+}
 
-.hero{padding:46px 0; background-image: linear-gradient( rgba(255,250,245,0.7), rgba(255,250,245,0.7) ), url(''); background-size:cover}
-.hero-inner{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
-.hero-copy{flex:1;min-width:260px}
-.hero-copy h1{font-size:36px;margin:0 0 10px}
-.lead{color:var(--muted);margin-bottom:18px}
-.btn-primary{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;display:inline-block}
+.brand-text{
+  font-weight:700;
+  font-size:20px;
+}
+
+.nav a{
+  margin-left:18px;
+  text-decoration:none;
+  color:var(--muted);
+}
+
+.nav a.cta{
+  background:var(--accent);
+  color:#fff;
+  padding:8px 12px;
+  border-radius:8px;
+}
+
+/* HERO */
+
+.hero{
+  padding:46px 0;
+  background-image: linear-gradient( rgba(255,250,245,0.7), rgba(255,250,245,0.7) ), url('');
+  background-size:cover;
+}
+
+.hero-inner{
+  display:flex;
+  gap:28px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.hero-copy{
+  flex:1;
+  min-width:260px;
+}
+
+.hero-copy h1{
+  font-size:36px;
+  margin:0 0 10px;
+}
+
+.lead{
+  color:var(--muted);
+  margin-bottom:18px;
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+}
+
+/* HERO ART */
+
+.hero-art {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-art svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SERVICES */
 
 .services {
   padding: 4rem 0;
@@ -89,25 +186,6 @@ body{
 
 .services-grid li strong {
   display: block;
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
-  color: #533e2d;
-}
-
-.services-grid li span {
-  display: block;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #6f5d4d;
-}
-
-.services-grid li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-}
-
-.services-grid li strong {
-  display: block;
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
   color: #533e2d;
@@ -120,11 +198,29 @@ body{
   color: #6f5d4d;
 }
 
-.local-seo{margin-top:12px;color:var(--muted);font-size:14px}
+.services-grid li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
 
-.how-it-works{padding:26px 0}
+.local-seo{
+  margin-top:12px;
+  color:var(--muted);
+  font-size:14px;
+}
 
-.steps {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:18px}
+/* HOW IT WORKS */
+
+.how-it-works{
+  padding:26px 0;
+}
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+  margin-top:18px;
+}
 
 .step {
   background:#fff;
@@ -137,7 +233,6 @@ body{
   justify-content:space-between;    /* push icon to far right */
   gap:12px;
 }
-
 
 .step-icon {
   width: 40px;
@@ -179,6 +274,8 @@ body{
   height: auto;
   display: block;
 }
+
+/* PRICING */
 
 .pricing {
   padding: 40px 0;
@@ -246,17 +343,76 @@ body{
   color: var(--muted);
 }
 
+/* QUOTE / FORM */
 
-.quote{padding:30px 0;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6))}
-.form{max-width:900px;margin:0 auto}
-.form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:12px}
-.form-row label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
-input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;background:white}
-textarea{resize:vertical}
-fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin-bottom:12px}
-.option{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.form-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.privacy{font-size:13px;color:var(--muted);margin:0}
+.quote{
+  padding:30px 0;
+  background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+}
+
+.form{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.form-row label{
+  font-size:13px;
+  color:var(--muted);
+  display:block;
+  margin-bottom:6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  background:white;
+}
+
+textarea{
+  resize:vertical;
+}
+
+fieldset.appointment{
+  border:1px solid #eee;
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+.option{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+}
+
+.form-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.privacy{
+  font-size:13px;
+  color:var(--muted);
+  margin:0;
+}
+
+/* FAQ */
 
 .faq {
   padding: 26px 0;
@@ -313,43 +469,15 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   color: #6f5d4d;
 }
 
-.grid-faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-
-/* Footer */
-.site-footer {
-  background: var(--brown);
-  color: #fff;
-  border-top: none; /* remove thin line */
+/* (Unused currently, but harmless if you ever switch layout)
+.grid-faq{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
 }
+*/
 
-.site-footer a {
-  color: #fff;
-  text-decoration: underline; /* optional but nice */
-}
-
-.footer-inner p,
-.footer-inner address {
-  color: #fff;
-}
-
-/* Restore horizontal layout for footer columns */
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: nowrap; /* prevent wrapping */
-}
-
-.footer-inner > div {
-  flex: 1;
-}
-
-/* Optional: make spacing nicer */
-.footer-inner > div:first-child {
-  margin-right: 40px;
-}
-
-/* POLISHED FOOTER DESIGN */
+/* FOOTER */
 
 .site-footer {
   background: var(--brown);
@@ -400,42 +528,7 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   opacity: 0.75;
 }
 
-@media (max-width:780px){
-  .form-row{grid-template-columns:1fr}
-  .hero-copy h1{font-size:26px}
-  .nav{display:none}
-
-  /* footer mobile layout */
-  .site-footer {
-    padding: 28px 0;
-  }
-
-  .footer-inner {
-    flex-wrap: wrap;
-    gap: 22px;
-  }
-
-  .footer-inner > div {
-    min-width: 100%;
-    margin-right: 0;
-    margin-bottom: 16px;
-  }
-}
-
-
-.hero-art {
-  flex: 1;
-  min-width: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-art svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+/* Footer divider + credit */
 
 .footer-divider {
   width: 60%;
@@ -460,4 +553,36 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
 
 .footer-credit a:hover {
   opacity: 0.8;                   /* same hover feel as other footer links */
+}
+
+/* RESPONSIVE */
+
+@media (max-width:780px){
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy h1{
+    font-size:26px;
+  }
+
+  .nav{
+    display:none;
+  }
+
+  /* footer mobile layout */
+  .site-footer {
+    padding: 28px 0;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .footer-inner > div {
+    min-width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 }
