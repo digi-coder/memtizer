@@ -369,3 +369,27 @@ fieldset.appointment{border:1px solid #eee;padding:12px;border-radius:8px;margin
   height: auto;
   display: block;
 }
+
+.footer-divider {
+  width: 60%;
+  margin: 1.5rem auto 1rem auto; /* Centered line with spacing */
+  border: 0;
+  border-top: 1px solid #ddd;    /* Light, subtle line */
+}
+
+.footer-credit {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer-credit a {
+  color: #888;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+}
