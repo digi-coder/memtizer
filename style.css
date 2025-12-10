@@ -391,7 +391,9 @@ body{
 
 /* 1st bullet: truck picking up & returning tapes */
 .pricing-grid .pricing-card:nth-child(4) ul li:nth-child(1)::before {
-  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%2032%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Crect%20x%3D%272%27%20y%3D%278%27%20width%3D%2718%27%20height%3D%277%27%20rx%3D%271.5%27%20fill%3D%27%2523c49a6c%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%279%27%20width%3D%278%27%20height%3D%276%27%20rx%3D%271.5%27%20fill%3D%27%2523f4e1c1%27%2F%3E%3Ccircle%20cx%3D%279%27%20cy%3D%2716%27%20r%3D%272%27%20fill%3D%27%2523333%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%2716%27%20r%3D%272%27%20fill%3D%27%2523333%27%2F%3E%3C%2Fsvg%3E");
+  width: 20px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 36 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='7' width='20' height='8' rx='2' fill='%23c49a6c'/%3E%3Crect x='22' y='8' width='10' height='6' rx='1.5' fill='%23f4e1c1'/%3E%3Ccircle cx='10' cy='17' r='2' fill='%23222'/%3E%3Ccircle cx='24' cy='17' r='2' fill='%23222'/%3E%3C/svg%3E");
 }
 
 /* 2nd bullet: radar / range coverage (~10 miles) */
@@ -406,12 +408,16 @@ body{
 
 /* 3rd bullet: money / $100 minimum */
 .pricing-grid .pricing-card:nth-child(4) ul li:nth-child(3)::before {
-  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%2028%2018%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Crect%20x%3D%271%27%20y%3D%272%27%20width%3D%2726%27%20height%3D%2714%27%20rx%3D%272%27%20fill%3D%27%2523f4e1c1%27%20stroke%3D%27%2523c49a6c%27%20stroke-width%3D%271.2%27%2F%3E%3C%2Fsvg%3E");
+  width: 22px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='3' width='28' height='14' rx='2' fill='%23f4e1c1' stroke='%23c49a6c' stroke-width='2'/%3E%3C/svg%3E");
 }
 
 /* 4th bullet: sofa / relax, we drive */
 .pricing-grid .pricing-card:nth-child(4) ul li:nth-child(4)::before {
-  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%2028%2018%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Crect%20x%3D%273%27%20y%3D%277%27%20width%3D%2722%27%20height%3D%277%27%20rx%3D%272%27%20fill%3D%27%2523c49a6c%27%2F%3E%3Crect%20x%3D%275%27%20y%3D%274%27%20width%3D%278%27%20height%3D%275%27%20rx%3D%272%27%20fill%3D%27%2523f4e1c1%27%2F%3E%3Crect%20x%3D%2715%27%20y%3D%274%27%20width%3D%278%27%20height%3D%275%27%20rx%3D%272%27%20fill%3D%27%2523f4e1c1%27%2F%3E%3Crect%20x%3D%275%27%20y%3D%2714%27%20width%3D%274%27%20height%3D%272%27%20rx%3D%271%27%20fill%3D%27%2523333%27%2F%3E%3Crect%20x%3D%2719%27%20y%3D%2714%27%20width%3D%274%27%20height%3D%272%27%20rx%3D%271%27%20fill%3D%27%2523333%27%2F%3E%3C%2Fsvg%3E");
+  width: 22px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3' y='8' width='26' height='8' rx='2' fill='%23c49a6c'/%3E%3Crect x='5' y='4' width='10' height='4' rx='2' fill='%23f4e1c1'/%3E%3Crect x='17' y='4' width='10' height='4' rx='2' fill='%23f4e1c1'/%3E%3Crect x='7' y='16' width='4' height='2' rx='1' fill='%23222'/%3E%3Crect x='21' y='16' width='4' height='2' rx='1' fill='%23222'/%3E%3C/svg%3E");
 }
 
 /* Extras: neutral grey cassette */
