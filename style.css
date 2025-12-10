@@ -369,6 +369,29 @@ body{
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
+/* Green check for Memtizer */
+.compare-grid .compare-card:nth-child(1) ul li::before {
+  content: "✔";
+  color: #2e7d32; /* green */
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+}
+
+/* Red X for Legacybox */
+.compare-grid .compare-card:nth-child(2) ul li::before {
+  content: "✖";
+  color: #c62828; /* red */
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
 /* Memtizer highlight card */
 .compare-card.highlight {
   border: 2px solid var(--brown);
