@@ -58,3 +58,26 @@ if (faqButtons.length) {
   });
 }
 
+//Navbar
+
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', function () {
+    const currentY = window.scrollY;
+
+    // Hide on scroll down (after a bit), show on scroll up
+    if (currentY > lastScrollY && currentY > 120) {
+      header.classList.add('site-header--hidden');
+    } else if (currentY < lastScrollY) {
+      header.classList.remove('site-header--hidden');
+    }
+
+    lastScrollY = currentY;
+  });
+});
+
+
