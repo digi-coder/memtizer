@@ -815,3 +815,45 @@ fieldset.appointment{
     margin-bottom: 16px;
   }
 }
+
+/* Legal / terms page */
+
+.legal {
+  padding: 3rem 0 4rem;
+}
+
+.legal h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.legal-intro {
+  max-width: 46rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.legal h2 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal p,
+.legal ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.legal ul {
+  padding-left: 1.2rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.legal ul li {
+  margin-bottom: 0.25rem;
+}
+
