@@ -552,7 +552,7 @@ body{
   gap: 20px;
   margin-top: 20px;
   padding: 16px 20px;
-  background: var(--light-bg, #f8f8f8);
+  background: #fff;
   border-radius: 8px;
   font-size: 0.9rem;
   color: var(--muted);
