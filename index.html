@@ -433,11 +433,18 @@
         <h2>Request a Free Quote</h2>
         <p class="muted">Tell us about your tapes and preferred drop-off or pickup option. We'll reply with price & turnaround.</p>
 
-        <!-- Will replace action URL with your form endpoint (Formspree, Getform, Freeform, etc.) -->
-        <form id="quoteForm" class="form" method="POST" action="YOUR_FORM_ENDPOINT">
+        <!-- Replaced action URL with your form endpoint (Formspree, Getform, Freeform, etc.) -->
+        <form id="quoteForm" class="form" method="POST" action="https://formspree.io/f/mzznjwze">
+          <!-- Optional: nicer email subject line -->
+          <input type="hidden" name="_subject" value="New Memtizer quote request">
+
+          <!-- Optional honeypot field for spam bots (Formspree ignores it if filled) -->
+          <input type="text" name="_gotcha" style="display:none">
+
           <div class="form-row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
+
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required />
           </div>
@@ -445,6 +452,7 @@
           <div class="form-row">
             <label for="phone">Phone (optional)</label>
             <input id="phone" name="phone" type="tel" />
+
             <label for="city">City</label>
             <input id="city" name="city" type="text" placeholder="e.g., North Hollywood" />
           </div>
@@ -486,13 +494,17 @@
 
           <label for="notes">Additional Notes / Tape Condition</label><br>
           <small style="color:#b33;">
-            If your tape has mold, heavy residue, or appears brittle or flaky, please let us know here. These tapes may require specialized restoration, so we’ll assess them before digitizing.
+            If your tape has mold, heavy residue, or appears brittle or flaky, please let us know here.
+            These tapes may require specialized restoration, so we’ll assess them before digitizing.
           </small>
           <textarea id="notes" name="notes" rows="4" placeholder="Moldy / brittle / audio issues? Tell us here."></textarea>
 
           <div class="form-actions">
             <button type="submit" class="btn-primary">Send Request</button>
-            <p class="privacy">By submitting you agree we may contact you about this request. Originals returned on request. See <a href="/terms">terms</a>.</p>
+            <p class="privacy">
+              By submitting you agree we may contact you about this request. Originals returned on request.
+              See <a href="/terms">terms</a>.
+            </p>
           </div>
         </form>
       </div>
