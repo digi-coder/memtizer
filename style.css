@@ -553,7 +553,7 @@ body{
   margin-top: 20px;
   padding: 16px 20px;
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid #e7d8c2;
   border-radius: 8px;
   font-size: 0.9rem;
   color: var(--muted);
