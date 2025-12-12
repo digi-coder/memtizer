@@ -888,3 +888,13 @@ fieldset.appointment{
   margin-bottom: 0.25rem;
 }
 
+/* Thank you page */
+
+.thank-you {
+  padding: 3rem 0 4rem;
+}
+
+.thank-you .legal-intro {
+  margin-bottom: 1.5rem;
+}
+
