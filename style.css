@@ -760,19 +760,20 @@ fieldset.appointment{
 /* Footer divider + credit */
 
 .footer-divider {
-  width: 60%;
-  margin: 1.5rem auto 1rem auto;  /* Centered line with spacing */
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.35); /* subtle light line in footer style */
+  display: none;
+}
+
+/* Full-width bottom bar */
+.footer-bottom {
+  background: #a68352; /* darker brown for contrast */
+  padding: 10px 0;
 }
 
 .footer-credit {
   text-align: center;
   font-size: 0.75rem;
-  background: #a68352; 
   color: rgba(255, 255, 255, 0.9); /* soft white, consistent with footer text */
-  margin-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .footer-credit a {
