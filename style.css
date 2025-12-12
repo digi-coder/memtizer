@@ -890,11 +890,29 @@ fieldset.appointment{
 
 /* Thank you page */
 
+/* Centered Thank You Layout */
 .thank-you {
-  padding: 3rem 0 4rem;
+  padding: 80px 0;                        /* vertical breathing room */
+  min-height: calc(100vh - 72px - 140px); /* header height + footer height */
+  display: flex;
+  align-items: center;                    /* vertically center content */
 }
 
-.thank-you .legal-intro {
-  margin-bottom: 1.5rem;
+.thank-you .container {
+  max-width: 640px;
+  text-align: center;
 }
+
+.thank-you h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
 
