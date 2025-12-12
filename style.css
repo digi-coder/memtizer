@@ -784,6 +784,35 @@ fieldset.appointment{
   opacity: 0.8;                   /* same hover feel as other footer links */
 }
 
+.footer-section h4 {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.footer-list li {
+  margin: 2px 0;
+}
+
+/* Make footer nav links clean and readable */
+.footer-nav a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
 /* RESPONSIVE */
 
 @media (max-width:780px){
