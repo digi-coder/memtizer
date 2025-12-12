@@ -1,26 +1,31 @@
-// small enhancements: smooth scroll + simple form feedback
-document.addEventListener('click', e => {
+// Smooth scroll for in-page anchors
+document.addEventListener('click', (e) => {
   const a = e.target.closest('a[href^="#"]');
-  if(a){
-    e.preventDefault();
+  if (a) {
     const id = a.getAttribute('href');
-    if(id && id.length>1){
-      document.querySelector(id).scrollIntoView({behavior:'smooth'});
+    // Ignore plain "#" links
+    if (id && id.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   }
 });
 
-// optional: show a simple message after submit (works if form POST returns to same page)
-// If you use Formspree / Getform you can follow their AJAX method — below is a tiny progressive enhancement.
+// Simple form feedback on submit (quote form)
 const form = document.getElementById('quoteForm');
-if(form){
+if (form) {
   form.addEventListener('submit', (ev) => {
-    // Basic client-side validation can be extended
     const btn = form.querySelector('button[type="submit"]');
+    if (!btn) return;
+
     btn.disabled = true;
     btn.textContent = 'Sending...';
-    // Let the form submit normally — you can swap to fetch() for AJAX.
-    setTimeout(()=> {
+
+    // Let the form submit normally; this is just a visual fallback
+    setTimeout(() => {
       btn.disabled = false;
       btn.textContent = 'Send Request';
     }, 4000);
@@ -35,7 +40,7 @@ if (faqButtons.length) {
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
 
-      // Optional: close all others
+      // Close all others
       faqButtons.forEach((b) => {
         if (b !== btn) {
           b.setAttribute('aria-expanded', 'false');
@@ -58,26 +63,37 @@ if (faqButtons.length) {
   });
 }
 
-//Navbar
-
-document.addEventListener('DOMContentLoaded', function () {
+// Navbar hide-on-scroll behavior
+document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
   let lastScrollY = window.scrollY;
+  const delta = 5;        // minimum scroll difference before acting
+  const hideOffset = 120; // don't hide until user has scrolled this far
 
-  window.addEventListener('scroll', function () {
+  function onScroll() {
     const currentY = window.scrollY;
+    const diff = currentY - lastScrollY;
 
-    // Hide on scroll down (after a bit), show on scroll up
-    if (currentY > lastScrollY && currentY > 120) {
+    // Ignore tiny jitter (especially on trackpads)
+    if (Math.abs(diff) < delta) return;
+
+    if (currentY > hideOffset && diff > 0) {
+      // Scrolling down past threshold -> hide header
       header.classList.add('site-header--hidden');
-    } else if (currentY < lastScrollY) {
+    } else if (diff < 0) {
+      // Scrolling up -> show header
+      header.classList.remove('site-header--hidden');
+    }
+
+    // Always show at very top
+    if (currentY <= 0) {
       header.classList.remove('site-header--hidden');
     }
 
     lastScrollY = currentY;
-  });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
 });
-
-
