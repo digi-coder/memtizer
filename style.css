@@ -698,6 +698,24 @@ fieldset.appointment{
   color: #6f5d4d;
 }
 
+.faq-history {
+  margin-top: 1.25rem;
+  max-width: 480px;
+}
+
+.faq-history img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.faq-history figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
 /* (Unused currently, but harmless if you ever switch layout)
 .grid-faq{
   display:grid;
