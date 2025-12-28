@@ -635,6 +635,11 @@ body{
   margin-right: auto;
 }
 
+/* Drop-off: give the intro text a little more breathing room under the H2 */
+#dropoff .sub {
+  margin-top: 12px;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .dropoff-grid {
