@@ -973,6 +973,33 @@ fieldset.appointment{
   margin-bottom: 0.25rem;
 }
 
+/* Chart in how-long-video-tapes-last */
+  .table-wrap{
+    overflow-x:auto;
+    margin-top:12px;
+    border:1px solid rgba(196,154,108,.25);
+    border-radius:12px;
+  }
+  .reference-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px; /* allows horizontal scroll on phones */
+  }
+  .reference-table th,
+  .reference-table td{
+    text-align:left;
+    vertical-align:top;
+    padding:12px 14px;
+    border-bottom:1px solid rgba(196,154,108,.18);
+  }
+  .reference-table thead th{
+    background:rgba(196,154,108,.10);
+  }
+  .reference-table tbody th small{
+    font-weight:400;
+    opacity:.8;
+  }
+
 /* Thank you page */
 
 /* Centered Thank You Layout */
