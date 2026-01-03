@@ -408,7 +408,7 @@ body{
 
 .pricing-intro {
   max-width: 900px;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   color: var(--muted);
   font-size: 0.98rem;
 }
