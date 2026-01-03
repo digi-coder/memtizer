@@ -415,7 +415,7 @@ body{
 
 .pricing-reassurance {
   max-width: 900px;      /* matches pricing-intro width */
-  margin: -14px 0 24px;  /* pulls it up closer + keeps same bottom spacing */
+  margin: 0 0 24px;  /* pulls it up closer + keeps same bottom spacing */
   color: #533e2d;        /* matches your pricing headings tone */
   font-size: 0.98rem;    /* matches intro size */
 }
