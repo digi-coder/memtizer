@@ -413,6 +413,13 @@ body{
   font-size: 0.98rem;
 }
 
+.pricing-reassurance {
+  max-width: 640px;      /* matches pricing-intro width */
+  margin: -14px 0 24px;  /* pulls it up closer + keeps same bottom spacing */
+  color: #533e2d;        /* matches your pricing headings tone */
+  font-size: 0.98rem;    /* matches intro size */
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
