@@ -223,6 +223,22 @@ body{
   font-size:14px;
 }
 
+.formats-note {
+  margin: 0.35rem 0 1.2rem;
+  font-size: 0.92rem;
+  color: #6f6a63;
+}
+
+.formats-note a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.formats-note a:hover {
+  opacity: 0.85;
+}
+
 /* Make service cards feel non-clickable on touch devices */
 @media (hover: none) and (pointer: coarse) {
   .services-grid li {
