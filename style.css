@@ -168,6 +168,13 @@ body{
   padding: 0;
 }
 
+/* SERVICES: keep card titles aligned even if one wraps */
+.services-grid .service-text strong {
+  display: block;
+  line-height: 1.2;
+  min-height: calc(1.2em * 2); /* reserve space for up to 2 lines */
+}
+
 .services-grid strong {
   letter-spacing: 0.01em;
 }
