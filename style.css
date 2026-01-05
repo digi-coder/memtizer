@@ -219,6 +219,19 @@ body{
   font-size:14px;
 }
 
+/* Make service cards feel non-clickable on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .services-grid li {
+    transition: none;
+  }
+  .services-grid li:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+
+
 /* HOW IT WORKS */
 
 .how-it-works{
