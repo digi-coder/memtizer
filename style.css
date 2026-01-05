@@ -224,6 +224,14 @@ body{
 }
 
 .formats-note {
+  display: inline-block;
+  padding: 0.35rem 0.55rem;
+  background: #faf6ef;
+  border: 1px solid #e7d8c2;
+  border-radius: 6px;
+}
+
+.formats-note {
   margin: 0.35rem 0 1.2rem;
   font-size: 0.92rem;
   color: #6f6a63;
