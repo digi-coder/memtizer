@@ -164,6 +164,10 @@ body{
   padding: 0;
 }
 
+.services-grid strong {
+  letter-spacing: 0.01em;
+}
+
 .services-grid li {
   background: #faf6ef;
   border: 1px solid #e7d8c2;
@@ -229,7 +233,6 @@ body{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 }
-
 
 
 /* HOW IT WORKS */
