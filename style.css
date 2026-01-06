@@ -628,6 +628,12 @@ body{
   line-height: 1.4;
 }
 
+.pricing-info-bar .info-item--full {
+  grid-column: 1 / -1;
+  padding-top: 12px;
+  border-top: 1px solid #e7d8c2;
+}
+
 @media (max-width: 700px) {
   .pricing-info-bar {
     grid-template-columns: 1fr;
